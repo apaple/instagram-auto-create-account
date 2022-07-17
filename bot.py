@@ -18,10 +18,7 @@ print(userAgent)
 
 
 #replace 'your path here' with your chrome binary absolute path
-caps = webdriver.DesiredCapabilities.CHROME.copy()
-caps['acceptInsecureCerts'] = True
-options = webdriver.ChromeOptions()
-driver = webdriver.Chrome('desired_capabilities=caps')
+driver = webdriver.Chrome('/path/to/chromedriver')
 
 #saves the login & pass into accounts.txt file.
 acc = open("accounts.txt", "a")
