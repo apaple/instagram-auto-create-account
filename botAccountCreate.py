@@ -10,6 +10,7 @@ import fakeMail as email
 import time
 import argparse
 
+parser = argparse.ArgumentParser(description='Process some integers.')
 args = parser.parse_args()
 ua = UserAgent()
 userAgent = ua.random
