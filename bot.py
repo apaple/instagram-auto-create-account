@@ -19,7 +19,7 @@ print(userAgent)
 
 #replace 'your path here' with your chrome binary absolute path
 options = webdriver.ChromeOptions()
-driver = webdriver.Chrome(options=options)
+driver = webdriver.Chrome('options=options')
 
 #saves the login & pass into accounts.txt file.
 acc = open("accounts.txt", "a")
